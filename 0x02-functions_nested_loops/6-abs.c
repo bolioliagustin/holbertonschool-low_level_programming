@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
-*_abs - compute the absolute value of an integer
-* @n: int type number
-* Return: absolute value of @n
+* _abs - Generate absolute of a number
+* @a: The number to be cheked
+* Return: absolute value for input number
 */
 int _abs(int a)
 {
