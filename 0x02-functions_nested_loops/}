@@ -1,0 +1,18 @@
+#include "holberton.h"
+/**
+* print_last_digit - Entry point
+*
+* Description: This function prints the last digit of a number
+*
+* @n: number to get the last digit
+*
+* Return: the last digit of 
+**/
+int print_last_digit(int n)
+{
+int f;
+while (f = n % 10){
+_putchar(f + '0');
+return(f);
+}
+}
