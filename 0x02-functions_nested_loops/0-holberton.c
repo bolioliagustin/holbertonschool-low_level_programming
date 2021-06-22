@@ -1,11 +1,18 @@
-#include<holberton.h>
+#include "holberton.h"
 /**
 * main - Entry point
 *
 * Return: Always 0 (Success)
 */
-int main(void)
+int  main(void)
 {
-printf("Holberton\n")
+char holberton[] = "Holberton";
+int i = 0;
+while (holberton[i] != '\0')
+{
+_putchar(holberton[i]);
+i++;
+}
+_putchar('\n');
 return (0);
 }
