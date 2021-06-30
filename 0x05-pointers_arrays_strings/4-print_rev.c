@@ -1,25 +1,19 @@
- #include "holberton.h"
+#include "holberton.h"
+
 /**
-* _puts - Prints a string followed by a new line
-* @str: string to print
-* Return: a
-*/
+ * print_rev - print in reverse
+ * @s: char string
+ */
 
-void _puts(char *str)
+void print_rev(char *s)
 {
+	int i;
 
-	int a, q;
-	a = 0;
+	for (i = 0; s[i] != '\0'; i++)
+		;
 
-	while (str[a] != '\0')
+	for (i--; i >= 0; i--)
+		_putchar(s[i]);
 
-	{
- 		a++;
-	}
-	for(q = a;q >= 0; q--)
-	{
-		_putchar(q);
-	}
 	_putchar('\n');
 }
-
