@@ -1,12 +1,11 @@
 #include "holberton.h"
+
 /**
-* reset_to_98 - update value of input
-* @n: pointer to int
-* Return: Nothing
-*/
+ * reset_to_98 - Set pointer param to 98.
+ * @n: int type pointer
+ */
 
 void reset_to_98(int *n)
 {
 	*n = 98;
 }
-
