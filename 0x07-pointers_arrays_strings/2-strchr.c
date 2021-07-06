@@ -1,5 +1,5 @@
 #include "holberton.h"
-#include <stdio.h>
+#include <stddef.h>
 /**
 * _strchr - Locates a character in a string.
 * @s: The string to be searched.
