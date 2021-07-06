@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
-*  _strstr - locates substring
+* _strstr - locates substring
 * Description: Function locates a substring @needle
 * in @haystack
 * @haystack: Pointer contains a string
@@ -9,35 +9,40 @@
 * Return: A pointer to the beginning of the located substring
 * in @accept, or NULL if the substring is not found
 */
-
 char *_strstr(char *haystack, char *needle)
 {
-int i = 0, j = 0;
-char *p = NULL;
+	int a = 0;
+	int b = 0;
+	int c;
+	int d = 0;
 
-if (needle[0] != '\0')
-	return (p);
+	if (*needle == '\0')
 	{
-		for (; haystack[i] != '\0'; i++)
+		return (haystack);
+	}
+	while (*(haystack + a) != '\0')
+	{
+		b = 0;
+		c = a;
+		while (*(needle + b) != '\0')
 		{
-			if (haystack[i] == needle[j])
+			if (*(needle + b) == *(haystack + c))
 			{
-				if (j == 0)
-				{
-					p = haystack + i;
-				}
-				j++;
-				if (needle[j] == 0)
-				{
-					break;
-				}
+				d = 1;
 			}
 			else
 			{
-				j = 0;
-				p = NULL;
+				d = 0;
+				break;
 			}
+			b++;
+			c++;
 		}
+		if (d == 1)
+		{
+			return (haystack + a);
+		}
+		a++;
 	}
-	return (p);
+	return (0);
 }
