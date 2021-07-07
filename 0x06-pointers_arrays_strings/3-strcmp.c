@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stddef.h>
 /**
 * _strcmp - Compare strings
 * Description: This function compare two strings
@@ -9,14 +8,14 @@
 */
 int _strcmp(char *s1, char *s2)
 {
-int i = 0;
-
-if (s1 != NULL && s2 != NULL)
+while (*s1 != '\0' && *s2 != '\0')
 {
-	while (s1[i] == s2[i] && s1[i] != '\0')
-	{
-	i++;
-	}
+	if (*s1 > *s2)
+		return (*s1 - *s2);
+	else if (*s1 < *s2)
+		return ((*s2 - *s1) * -1);
+	s1++;
+	s2++;
 }
-return (s1[i] - s2[i]);
+return (0);
 }
