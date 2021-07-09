@@ -1,16 +1,25 @@
-#include "stdio.h"
-/**
- * main - Entry point
- * @argc: wopa
- * @argv: sdkna
- *
- * Description: Show a message blablabla
- * Return: Always 0 (Success)
- */
+#include <stdio.h>
 
+/**
+ * main - main entry
+ *@argc: arguments numbers
+ *@argv: string arguments
+ * Return: 0
+ */
 int main(int argc, char *argv[])
 {
+	int i;
+
 	(void)argv;
-	printf("%d \n", argc - 1);
+	if (argc > 1)
+	{
+		for (i = 0; i < argc; i++)
+			;
+		printf("%d\n", i - 1);
+	}
+	else
+	{
+		printf("0\n");
+	}
 	return (0);
 }
