@@ -22,7 +22,11 @@ for (l = 0; *(str + l) != '\0'; l++)
 {
 }
 p = malloc(sizeof(char) * l);
-if (p)
+if (p == NULL)
+{
+	return (NULL);
+}
+else
 {
 	for (i = 0; i < l; i++)
 	{
