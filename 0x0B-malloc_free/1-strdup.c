@@ -21,7 +21,7 @@ if (str == NULL)
 for (l = 0; *(str + l) != '\0'; l++)
 {
 }
-p = malloc(sizeof(char) * l);
+p = malloc((sizeof(char) * l + 1));
 if (p == NULL)
 {
 	return (NULL);
