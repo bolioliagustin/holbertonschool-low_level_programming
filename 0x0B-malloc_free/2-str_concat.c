@@ -34,7 +34,7 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 
-	for (k = 0,l = 0; k < (i + j + 1); k++)
+	for (k = 0, l = 0; k < (i + j + 1); k++)
 	{
 		if (k < i)
 		{
