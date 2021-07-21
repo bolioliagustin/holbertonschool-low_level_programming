@@ -1,4 +1,11 @@
 #include "function_pointers.h"
+/**
+*int_index - int index
+*@array: array of
+*@size: sixe of array
+*@cmp: function ponter
+*Return: return the index
+*/
 int int_index(int *array, int size, int (*cmp)(int))
 {
 int i;
