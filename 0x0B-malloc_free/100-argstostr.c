@@ -31,10 +31,10 @@ char *argstostr(int ac, char **av)
 				*(p + l) = *(*(av + i) + j);
 				l++;
 			}
-			*(p + length) = '\n';
+			*(p + l) = '\n';
 			l++;
 		}
-		*(p + length) = '\0';
+		*(p + l) = '\0';
 		return (p);
 	}
 	else
