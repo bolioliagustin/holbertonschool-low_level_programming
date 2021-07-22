@@ -15,7 +15,7 @@ for (i = 0; i < n; i++)
 {
 	if (va_arg(prints, char*) == NULL)
 	{
-		printf("Nil");
+		printf("(nil)");
 	}
 	else
 	{
