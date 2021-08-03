@@ -13,9 +13,9 @@ if (h)
 	while (h)
 	{
 		printf("%d\n", h->n);
-		h = h ->next;
+		h = h->next;
 	a++;
 	}
 }
-return(a);
+return (a);
 }
