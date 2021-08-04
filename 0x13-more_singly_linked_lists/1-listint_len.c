@@ -17,5 +17,5 @@ if (h)
 		h = h->next;
 	}
 }
-return (a)
+return (a);
 }
