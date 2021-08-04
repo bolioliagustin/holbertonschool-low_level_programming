@@ -19,5 +19,5 @@ if (head)
 		*head = add_node;
 	}
 }
-return(add_node);
+return (add_node);
 }
