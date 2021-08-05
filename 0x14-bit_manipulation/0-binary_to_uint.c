@@ -2,32 +2,38 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * binary_to_uint - convierte de binario a decimal
- * @b: puntero con el numero binario
- * Return: return numero decimal
+ * binary_to_uint - convierte vbinario a decimal
+ * @b: puntero 
+ * Return: numero en decimal
  */
 unsigned int binary_to_uint(const char *b)
 {
-int decimal = 0, j = 1, i = 0, r, t;
+	int i = 0;
+	int l = 0;
+	int n = 1;
 
-if (!b)
-{
-	return (0);
-}
-for (; b[i]; i++)
-{
-	if (b[i] != '0' && b[i] != '1')
-	{
+	if (!b)
 		return (0);
+
+	for (; b[i] ; i++)
+	{
+		if (b[i] != '1' && b[i] != '0')
+			return (0);
 	}
-}
-t = atoi(b);
-while (t > 0)
-{
-	r = t % 10;
-	decimal = decimal + r * j;
-	t = t / 10;
-	j = j * 2;
-}
-return (decimal);
+
+	while (i >= 0)
+	{
+		if (b[i] == '1')
+		{
+			l += n;
+			n *= 2;
+		}
+		else if (b[i] == '0')
+		{
+			n *= 2;
+		}
+		i--;
+	}
+	return (l);
+
 }
