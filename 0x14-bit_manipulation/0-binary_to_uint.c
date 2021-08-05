@@ -3,7 +3,7 @@
 #include <stdlib.h>
 /**
  * binary_to_uint - convierte vbinario a decimal
- * @b: puntero 
+ * @b: puntero
  * Return: numero en decimal
  */
 unsigned int binary_to_uint(const char *b)
