@@ -2,7 +2,7 @@
 
 /**
  *set_bit - value of a bit to 1 at a given index
- *@n: number 
+ *@n: number
  *@index: the position
  *Return: 1 if it worked, or -1 if an error occurred
  */
