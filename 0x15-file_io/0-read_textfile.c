@@ -20,7 +20,7 @@ buffer = malloc(sizeof(char) * letters);
 	}
 i_open = open(filename, O_RDONLY);
 i_read = read(i_open, buffer, letters);
-i_write = write(STDOUT_FILENO, buffer, letters);
+i_write = write(STDOUT_FILENO, buffer, i_read);
 
 if (i_open == -1 || i_read == -1 || i_write == -1 || i_write != i_read)
 	{
