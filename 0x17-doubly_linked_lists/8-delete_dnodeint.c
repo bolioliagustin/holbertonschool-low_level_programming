@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * delete_dnodeint_at_index - add node at the end 
+ * delete_dnodeint_at_index - add node at the end
  * @head: lists
  * @index: int
  * Return: 1 succeeded, -1  failed
